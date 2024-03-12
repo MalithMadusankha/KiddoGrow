@@ -80,6 +80,9 @@ const AxTheme = StyleSheet.create({
   justifyStart: {
     justifyContent: 'flex-start',
   },
+  justifyEnd: {
+    justifyContent: 'flex-end',
+  },
 
   alignItemCenter: {
     alignItems: 'center',

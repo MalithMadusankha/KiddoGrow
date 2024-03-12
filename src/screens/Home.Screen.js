@@ -8,6 +8,7 @@ import {
   Image,
   Platform,
   ImageBackground,
+  TouchableOpacity,
 } from 'react-native';
 import TM from '../assets/them/AxTheme';
 
@@ -35,17 +36,31 @@ const HomeScreen = ({navigation}) => {
 
   return (
     <SafeAreaView>
-      <View style={[TM.w100, TM.h100, TM.bgMain3, css.paddinggHorizontal]}>
-        <View style={[TM.h4, TM.justifyCenter]}>
-          <Text style={[TM.fMain1, TM.txtAlignLeft]}>
-            THURSADAY, 08, FEBRURAY
-          </Text>
+      <View
+        style={[TM.w100, TM.h100, TM.bgMain3, css.paddinggHorizontal, TM.pt1]}>
+        <View style={[TM.flexDirRow, TM.justifySpaceBetween, TM.alignCenter]}>
+          <View style={[TM.flexDirCol]}>
+            <View style={[]}>
+              <Text style={[TM.fMain1, TM.txtAlignLeft]}>
+                THURSDAY, 08, FEBRUARY
+              </Text>
+            </View>
+            <View style={[]}>
+              <Text style={[TM.fBlack, TM.txtAlignLeft, TM.fBold, TM.f18]}>
+                Today
+              </Text>
+            </View>
+          </View>
+          <View style={[TM.flexDirCol]}>
+            <TouchableOpacity style={[TM.flexDirRowReverse, TM.mt5]}>
+              <Image
+                source={require('../assets/icons/notification.png')}
+                style={[styles.notification]}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
-        <View style={[TM.h3, TM.justifyCenter]}>
-          <Text style={[TM.fBlack, TM.txtAlignLeft, TM.fBold, TM.f18]}>
-            Today
-          </Text>
-        </View>
+
         <View style={[styles.shadow, TM.mt2]}>
           <ImageBackground
             source={require('../assets/img/home.jpg')}
@@ -55,7 +70,29 @@ const HomeScreen = ({navigation}) => {
               TM.overflowHidden,
               styles.shadow,
             ]}>
-            <Text style={styles.textOnImage}>Good Morning</Text>
+            <Text
+              style={[TM.positionAbsolute, TM.fBold, TM.f18, styles.greeting]}>
+              Good Morning
+            </Text>
+            <Text style={[TM.positionAbsolute, TM.fBold, TM.f27, styles.baby]}>
+              Emma
+            </Text>
+
+            <Text
+              style={[TM.positionAbsolute, TM.fBold, TM.f33, styles.yearNum]}>
+              3
+            </Text>
+            <Text style={[TM.positionAbsolute, TM.fBold, TM.f22, styles.year]}>
+              Years
+            </Text>
+
+            <Text
+              style={[TM.positionAbsolute, TM.fBold, TM.f33, styles.monthNum]}>
+              2
+            </Text>
+            <Text style={[TM.positionAbsolute, TM.fBold, TM.f22, styles.month]}>
+              Months
+            </Text>
           </ImageBackground>
         </View>
       </View>
@@ -77,13 +114,40 @@ const styles = StyleSheet.create({
       },
     }),
   },
-  textOnImage: {
-    position: 'absolute',
-    bottom: 16,
+
+  notification: {
+    height: 30,
+    width: 40,
+  },
+  greeting: {
+    top: 16,
     left: 16,
     color: 'white',
-    fontSize: 18,
-    fontWeight: 'bold',
+  },
+  baby: {
+    top: 50,
+    left: 16,
+    color: 'white',
+  },
+  yearNum: {
+    bottom: 50,
+    left: 16,
+    color: 'white',
+  },
+  year: {
+    bottom: 20,
+    left: 16,
+    color: 'white',
+  },
+  monthNum: {
+    bottom: 50,
+    right: 16,
+    color: 'white',
+  },
+  month: {
+    bottom: 20,
+    right: 16,
+    color: 'white',
   },
 });
 
