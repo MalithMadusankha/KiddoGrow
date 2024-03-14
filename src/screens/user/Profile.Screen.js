@@ -5,12 +5,11 @@ import {
   StyleSheet,
   View,
   Dimensions,
-  ImageBackground,
   SafeAreaView,
   Image,
   TouchableOpacity,
 } from 'react-native';
-import Theme from '../../assets/them/AxTheme';
+import TM from '../../assets/them/AxTheme';
 
 const ProfileScreen = ({navigation}) => {
   const SCREEN_WIDTH = Dimensions.get('screen').width;
@@ -39,23 +38,20 @@ const ProfileScreen = ({navigation}) => {
 
   return (
     <SafeAreaView>
-      <ImageBackground
-        imageStyle={[Theme.w100, Theme.h100, Theme.justAlign]}
-        style={[Theme.w100, Theme.h100, Theme.justAlign]}
-        source={require('../../assets/img/home-bg.png')}>
+      <View style={[TM.w100, TM.h100, TM.justAlign, TM.bgMain]}>
         {/* back button */}
         <TouchableOpacity
           onPress={() => navigation.goBack()}
           style={[
-            Theme.bgTransparent1,
+            TM.bgTransparent1,
             {width: SCREEN_WIDTH * 0.3, height: SCREEN_HEIGHT * 0.047},
-            Theme.p4,
-            Theme.borderRadius20,
-            Theme.alignItemCenter,
+            TM.p4,
+            TM.borderRadius20,
+            TM.alignItemCenter,
             styles.backBtn,
           ]}>
-          <View style={[Theme.flexDirRow]}>
-            <Text style={[Theme.fBlack, Theme.fBold, Theme.f18]}>ආපසු</Text>
+          <View style={[TM.flexDirRow]}>
+            <Text style={[TM.fBlack, TM.fBold, TM.f18]}>ආපසු</Text>
             <Image
               style={[styles.next]}
               source={require('../../assets/icons/back-ic.png')}
@@ -65,28 +61,28 @@ const ProfileScreen = ({navigation}) => {
 
         <View
           style={[
-            Theme.mt10,
-            Theme.bgTransparent,
+            TM.mt10,
+            TM.bgTransparent,
             {width: SCREEN_WIDTH * 0.9, height: SCREEN_HEIGHT * 0.7},
-            Theme.p4,
-            Theme.borderRadius20,
-            Theme.alignItemCenter,
+            TM.p4,
+            TM.borderRadius20,
+            TM.alignItemCenter,
           ]}>
-          <View style={[Theme.h5]}>
-            <Text style={[Theme.fBlack, Theme.f18]}>දරුවාගේ තොරතුරු</Text>
+          <View style={[TM.h5]}>
+            <Text style={[TM.fBlack, TM.f18]}>දරුවාගේ තොරතුරු</Text>
           </View>
           <Image
-            source={require('../../assets/img/profile.png')}
+            source={require('../../assets/icons/profile.png')}
             style={css.profile}
           />
           {/* name */}
-          <View style={[Theme.h10, Theme.flexDirRow]}>
+          <View style={[TM.h10, TM.flexDirRow]}>
             <View
               style={[
-                Theme.justifyCenter,
-                Theme.px3,
-                Theme.bgWhite,
-                Theme.borderRadiusStart15,
+                TM.justifyCenter,
+                TM.px3,
+                TM.bgWhite,
+                TM.borderRadiusStart15,
               ]}>
               <Image
                 style={[css.name]}
@@ -94,26 +90,21 @@ const ProfileScreen = ({navigation}) => {
               />
             </View>
             <TextInput
-              style={[
-                Theme.bgWhite,
-                Theme.fBlack,
-                css.input,
-                Theme.borderRadiusEnd15,
-              ]}
+              style={[TM.bgWhite, TM.fBlack, css.input, TM.borderRadiusEnd15]}
               placeholderTextColor="black"
               placeholder="නම"
               onChangeText={text => setUserName(text)}
             />
           </View>
-          <View style={[Theme.h5]} />
+          <View style={[TM.h5]} />
           {/* birthday */}
-          <View style={[Theme.h10, Theme.flexDirRow]}>
+          <View style={[TM.h10, TM.flexDirRow]}>
             <View
               style={[
-                Theme.justifyCenter,
-                Theme.px3,
-                Theme.bgWhite,
-                Theme.borderRadiusStart15,
+                TM.justifyCenter,
+                TM.px3,
+                TM.bgWhite,
+                TM.borderRadiusStart15,
               ]}>
               <Image
                 style={[css.birth]}
@@ -121,27 +112,22 @@ const ProfileScreen = ({navigation}) => {
               />
             </View>
             <TextInput
-              style={[
-                Theme.bgWhite,
-                Theme.fBlack,
-                css.input,
-                Theme.borderRadiusEnd15,
-              ]}
+              style={[TM.bgWhite, TM.fBlack, css.input, TM.borderRadiusEnd15]}
               placeholderTextColor="black"
               placeholder="උපන් දිනය"
               onChangeText={text => setPassword(text)}
             />
           </View>
 
-          <View style={[Theme.h5]} />
+          <View style={[TM.h5]} />
           {/* age */}
-          <View style={[Theme.h10, Theme.flexDirRow]}>
+          <View style={[TM.h10, TM.flexDirRow]}>
             <View
               style={[
-                Theme.justifyCenter,
-                Theme.px3,
-                Theme.bgWhite,
-                Theme.borderRadiusStart15,
+                TM.justifyCenter,
+                TM.px3,
+                TM.bgWhite,
+                TM.borderRadiusStart15,
               ]}>
               <Image
                 style={[css.birth]}
@@ -149,67 +135,62 @@ const ProfileScreen = ({navigation}) => {
               />
             </View>
             <TextInput
-              style={[
-                Theme.bgWhite,
-                Theme.fBlack,
-                css.input,
-                Theme.borderRadiusEnd15,
-              ]}
+              style={[TM.bgWhite, TM.fBlack, css.input, TM.borderRadiusEnd15]}
               placeholderTextColor="black"
               placeholder="වයස"
               onChangeText={text => setPassword(text)}
             />
           </View>
-          <View style={[Theme.h5]} />
+          <View style={[TM.h5]} />
           {/* age */}
-          <View style={[Theme.h10, Theme.flexDirRow]}>
+          <View style={[TM.h10, TM.flexDirRow]}>
             <TouchableOpacity
               onPress={() => setGender(1)}
               style={[
-                gender === 1 ? Theme.bgLogin : Theme.bgWhite,
-                Theme.fBlack,
+                gender === 1 ? TM.bgLogin : TM.bgWhite,
+                TM.fBlack,
                 css.gender,
-                Theme.borderRadius15,
-                Theme.alignItemCenter,
-                Theme.justifyCenter,
-                Theme.mr2,
+                TM.borderRadius15,
+                TM.alignItemCenter,
+                TM.justifyCenter,
+                TM.mr2,
               ]}>
-              <Text style={[Theme.fBlack, Theme.f15]}> පිරිමි </Text>
+              <Text style={[TM.fBlack, TM.f15]}> පිරිමි </Text>
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => setGender(0)}
               style={[
-                gender === 0 ? Theme.bgLogin : Theme.bgWhite,
-                Theme.fBlack,
+                gender === 0 ? TM.bgLogin : TM.bgWhite,
+                TM.fBlack,
                 css.gender,
-                Theme.borderRadius15,
-                Theme.alignItemCenter,
-                Theme.justifyCenter,
+                TM.borderRadius15,
+                TM.alignItemCenter,
+                TM.justifyCenter,
 
-                Theme.ml2,
+                TM.ml2,
               ]}>
-              <Text style={[Theme.fBlack, Theme.f15]}> ගැහැණු </Text>
+              <Text style={[TM.fBlack, TM.f15]}> ගැහැණු </Text>
             </TouchableOpacity>
           </View>
 
-          <View style={[Theme.h5]} />
+          <View style={[TM.h5]} />
           {/* submit */}
-          <View style={[Theme.h10, Theme.flexDirRow]}>
+          <View style={[TM.h10, TM.flexDirRow]}>
             <TouchableOpacity
               onPress={() => navigation.navigate('Home')}
               style={[
-                Theme.bgGreen,
-                Theme.fBlack,
+                TM.bgGreen,
+                TM.fBlack,
                 css.btn,
-                Theme.borderRadius15,
-                Theme.alignItemCenter,
-                Theme.justifyCenter,
+                TM.borderRadius15,
+                TM.alignItemCenter,
+                TM.justifyCenter,
               ]}>
-              <Text style={[Theme.fBlack, Theme.f15]}> ඇතුල් වන්න </Text>
+              <Text style={[TM.fBlack, TM.f15]}> ඇතුල් වන්න </Text>
             </TouchableOpacity>
           </View>
         </View>
-      </ImageBackground>
+      </View>
     </SafeAreaView>
   );
 };

@@ -1,6 +1,9 @@
 import {StyleSheet} from 'react-native';
 
 const AxTheme = StyleSheet.create({
+  bgMain: {
+    backgroundColor: '#EAFAFB',
+  },
   bgMain0: {
     backgroundColor: '#C4F6F0',
   },
@@ -13,7 +16,7 @@ const AxTheme = StyleSheet.create({
   },
 
   bgMain3: {
-    backgroundColor: '#EAFAFB',
+    backgroundColor: '#d9ee9f',
   },
 
   bgMain4: {
@@ -32,12 +35,20 @@ const AxTheme = StyleSheet.create({
     backgroundColor: '#2DEBE0',
   },
 
+  bgMain8: {
+    backgroundColor: '#F1FFFE',
+  },
+
   fMain0: {
     color: '#246FA5',
   },
 
   fMain1: {
     color: '#393939',
+  },
+
+  fGreen: {
+    color: '#189725',
   },
 
   borderColorMain0: {
@@ -472,7 +483,7 @@ const AxTheme = StyleSheet.create({
     color: '#ffffff',
   },
 
-  fGreen: {
+  fGreen1: {
     color: '#18d928',
   },
 
@@ -875,6 +886,10 @@ const AxTheme = StyleSheet.create({
     height: '25%',
   },
 
+  h26: {
+    height: '26%',
+  },
+
   h27: {
     height: '27%',
   },
@@ -913,6 +928,12 @@ const AxTheme = StyleSheet.create({
 
   h45: {
     height: '45%',
+  },
+  h48: {
+    height: '48%',
+  },
+  h49: {
+    height: '49%',
   },
 
   h50: {
@@ -1100,6 +1121,10 @@ const AxTheme = StyleSheet.create({
 
   borderRadius40: {
     borderRadius: 40,
+  },
+
+  borderRadius50: {
+    borderRadius: 50,
   },
 
   borderRadius100: {

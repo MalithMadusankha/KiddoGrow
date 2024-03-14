@@ -11,6 +11,8 @@ import {
 } from 'react-native';
 import TM from '../../assets/them/AxTheme';
 
+import MateriallconsIcon from 'react-native-vector-icons/MaterialIcons';
+
 const LoginScreen = ({navigation}) => {
   const SCREEN_WIDTH = Dimensions.get('screen').width;
   const SCREEN_HEIGHT = Dimensions.get('screen').height;
@@ -48,19 +50,19 @@ const LoginScreen = ({navigation}) => {
           style={[
             TM.mt10,
             TM.bgTransparent,
-            {width: SCREEN_WIDTH * 0.9, height: SCREEN_HEIGHT * 0.5},
+            {width: SCREEN_WIDTH * 0.9, height: SCREEN_HEIGHT * 0.4},
             TM.p4,
             TM.borderRadius20,
             TM.alignItemCenter,
           ]}>
           <View style={[TM.h2]} />
-          <View style={[TM.h13]}>
+          <View style={[TM.h15]}>
             <Text style={[TM.fBlack, TM.f18, TM.fBold]}>
               Welcome back to KiddoGrow
             </Text>
           </View>
           {/* email */}
-          <View style={[TM.h13, TM.flexDirRow]}>
+          <View style={[TM.h15, TM.flexDirRow]}>
             <View
               style={[
                 TM.justifyCenter,
@@ -68,10 +70,7 @@ const LoginScreen = ({navigation}) => {
                 TM.bgWhite,
                 TM.borderRadiusStart15,
               ]}>
-              <Image
-                style={[css.send]}
-                source={require('../../assets/icons/send.png')}
-              />
+              <MateriallconsIcon name="email" size={30} color="black" />
             </View>
             <TextInput
               style={[TM.bgWhite, TM.fBlack, css.input, TM.borderRadiusEnd15]}
@@ -82,7 +81,7 @@ const LoginScreen = ({navigation}) => {
           </View>
           <View style={[TM.h7]} />
           {/* password */}
-          <View style={[TM.h13, TM.flexDirRow]}>
+          <View style={[TM.h15, TM.flexDirRow]}>
             <View
               style={[
                 TM.justifyCenter,
@@ -90,10 +89,7 @@ const LoginScreen = ({navigation}) => {
                 TM.bgWhite,
                 TM.borderRadiusStart15,
               ]}>
-              <Image
-                style={[css.lock]}
-                source={require('../../assets/icons/lock.jpg')}
-              />
+              <MateriallconsIcon name="lock" size={30} color="black" />
             </View>
             <TextInput
               style={[TM.bgWhite, TM.fBlack, css.input, TM.borderRadiusEnd15]}
@@ -103,7 +99,7 @@ const LoginScreen = ({navigation}) => {
             />
           </View>
           <View style={[TM.h8]} />
-          <View style={[TM.h13, TM.flexDirRow]}>
+          <View style={[TM.h15, TM.flexDirRow]}>
             <TouchableOpacity
               style={[
                 TM.fBlack,
@@ -116,7 +112,7 @@ const LoginScreen = ({navigation}) => {
               <Text style={[TM.fMain0, TM.f16]}>Forget password</Text>
             </TouchableOpacity>
           </View>
-          <View style={[TM.h13, TM.flexDirRow]}>
+          <View style={[TM.h15, TM.flexDirRow]}>
             <TouchableOpacity
               onPress={() => navigation.navigate('Home')}
               style={[
