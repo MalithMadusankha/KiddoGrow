@@ -29,7 +29,7 @@ const ContactScreen = ({navigation}) => {
     btn: {
       width: SCREEN_WIDTH * 0.75,
     },
-    logo: {
+    cover: {
       width: SCREEN_WIDTH * 0.85,
       height: SCREEN_HEIGHT * 0.4,
     },
@@ -42,10 +42,6 @@ const ContactScreen = ({navigation}) => {
       height: SCREEN_HEIGHT * 0.35,
       marginBottom: SCREEN_HEIGHT * 0.05,
     },
-    menuArea: {
-      width: SCREEN_WIDTH * 0.85,
-      height: SCREEN_HEIGHT * 0.07,
-    },
     paddinggHorizontal: {
       paddingHorizontal: SCREEN_WIDTH * 0.075,
     },
@@ -53,8 +49,6 @@ const ContactScreen = ({navigation}) => {
       marginHorizontal: SCREEN_WIDTH * 0.075,
     },
     paddingVertical: {marginVertical: SCREEN_HEIGHT * 0.01},
-
-    lock: {width: 20, height: 25, marginHorizontal: '3%'},
   };
 
   const greetingHandler = () => {
@@ -105,7 +99,7 @@ const ContactScreen = ({navigation}) => {
           <ImageBackground
             source={require('../assets/img/home.jpg')}
             style={[
-              css.logo,
+              css.cover,
               TM.borderRadius20,
               TM.overflowHidden,
               styles.shadow,
@@ -128,36 +122,45 @@ const ContactScreen = ({navigation}) => {
             css.cardInfo,
           ]}>
           <View style={[TM.h1]} />
-
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              KiddoGrow (pvt) Ltd
-            </Text>
-          </View>
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              No 245
-            </Text>
-          </View>
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              Kaduwela Road
-            </Text>
-          </View>
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              Malabe
-            </Text>
-          </View>
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              0777456789
-            </Text>
-          </View>
-          <View style={[TM.h16]}>
-            <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
-              contact@kiddogrow.lk
-            </Text>
+          <View style={[TM.h98, TM.flexDirRow, TM.w100]}>
+            <View style={[TM.h100]}>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  KiddoGrow (pvt) Ltd
+                </Text>
+              </View>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  No 245
+                </Text>
+              </View>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  Kaduwela Road
+                </Text>
+              </View>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  Malabe
+                </Text>
+              </View>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  0777456789
+                </Text>
+              </View>
+              <View style={[TM.h16]}>
+                <Text style={[TM.fBlack, TM.f18, TM.fBold, TM.txtAlignLeft]}>
+                  contact@kiddogrow.lk
+                </Text>
+              </View>
+            </View>
+            <View style={[TM.h100, TM.w40, TM.justAlign]}>
+              <Image
+                source={require('../assets/img/logo.png')}
+                style={[TM.w100, TM.h100]}
+              />
+            </View>
           </View>
         </View>
 

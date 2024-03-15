@@ -1008,6 +1008,10 @@ const AxTheme = StyleSheet.create({
     height: '95%',
   },
 
+  h96: {
+    height: '96%',
+  },
+
   h97: {
     height: '97%',
   },

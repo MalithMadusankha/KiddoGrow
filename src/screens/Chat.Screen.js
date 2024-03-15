@@ -83,19 +83,20 @@ const ChatScreen = ({navigation}) => {
             TM.h8,
             TM.flexDirRow,
             TM.justifySpaceAround,
-            TM.px2,
+            styles.px,
           ]}>
-          <View style={[TM.w78]}>
+          <View style={[TM.w78, TM.pt1]}>
             <TextInput
               placeholderTextColor="gray"
               placeholder="Type your message..."
               style={styles.input}
             />
           </View>
-          <TouchableOpacity
-            style={[TM.w10, TM.bgWhite, styles.icon, TM.justAlign]}>
-            <FontAwesomeIcon size={30} color={ICON_COLOR} name="send" />
-          </TouchableOpacity>
+          <View style={[TM.w15]}>
+            <TouchableOpacity style={[TM.bgWhite, styles.icon, TM.justAlign]}>
+              <FontAwesomeIcon size={25} color={ICON_COLOR} name="send" />
+            </TouchableOpacity>
+          </View>
         </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -103,6 +104,9 @@ const ChatScreen = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
+  px: {
+    paddingLeft: 7,
+  },
   logo: {
     width: 40,
     height: 40,

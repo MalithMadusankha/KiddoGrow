@@ -124,7 +124,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain2, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('BabyCare')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -146,7 +146,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain2, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Caring')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -168,7 +168,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain2, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Bathing')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -203,7 +203,7 @@ const GuideScreen = ({navigation}) => {
           <View
             style={[TM.h100, TM.bgMain5, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Immunization')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -243,7 +243,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h5]} />
           <View style={[TM.h40, TM.bgMain6, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Mental')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -265,7 +265,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h40, TM.bgMain6, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('ReduceStress')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -306,7 +306,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain7, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Breast')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -328,7 +328,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain7, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('Months6')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
@@ -350,7 +350,7 @@ const GuideScreen = ({navigation}) => {
           <View style={[TM.h3]} />
           <View style={[TM.h26, TM.bgMain7, TM.w95, TM.borderRadius15, TM.px3]}>
             <TouchableOpacity
-              onPress={() => navigation.navigate('Vaccination')}
+              onPress={() => navigation.navigate('FeedingR')}
               style={[TM.h100, TM.flexDirRow, TM.justifySpaceBetween, TM.w100]}>
               <View style={[TM.flexDirRow]}>
                 <View style={[TM.justAlign]}>
